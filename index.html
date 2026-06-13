@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CodeAlpha Supercar Gallery</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>r̥
+
+    <div class="gallery-container">
+        <h1>Supercar Image Gallery</h1>
+        <p>Click on any image to view it in full screen</p>
+
+        <div class="image-grid">
+            <div class="gallery-item" onclick="openLightbox(this)">
+                <img src="https://images.unsplash.com/photo-1614162692292-7ac56d7f7f1e?q=80&w=800" alt="Porsche 911 GT3 RS">
+                <div class="overlay">Porsche 911 GT3 RS</div>
+            </div>
+            <div class="gallery-item" onclick="openLightbox(this)">
+                <img src="https://images.unsplash.com/photo-1503376780353-7e6692767b70?q=80&w=800" alt="Porsche Carrera Classic">
+                <div class="overlay">Porsche Carrera</div>
+            </div>
+            <div class="gallery-item" onclick="openLightbox(this)">
+                <img src="https://images.unsplash.com/photo-1563720223185-11003d516935?q=80&w=800" alt="Porsche Cayenne SUV">
+                <div class="overlay">Porsche SUV</div>
+            </div>
+            <div class="gallery-item" onclick="openLightbox(this)">
+                <img src="https://images.unsplash.com/photo-1611245511096-c1df7e1e69d7?q=80&w=800" alt="Vintage Porsche 911">
+                <div class="overlay">Classic 911</div>
+            </div>
+            <div class="gallery-item" onclick="openLightbox(this)">
+                <img src="https://images.unsplash.com/photo-1618843479313-40f8afb4b4d8?q=80&w=800" alt="Mercedes AMG GT">
+                <div class="overlay">Mercedes AMG</div>
+            </div>
+            <div class="gallery-item" onclick="openLightbox(this)">
+                <img src="https://images.unsplash.com/photo-1525609004556-c46c7d6cf0a3?q=80&w=800" alt="Lamborghini Aventador">
+                <div class="overlay">Lamborghini</div>
+            </div>
+        </div>
+    </div>
+
+    <div id="lightbox" class="lightbox" onclick="closeLightbox()">
+        <span class="close-btn">&times;</span>
+        <img id="lightbox-img" src="" alt="Full Screen View">
+        <div id="lightbox-caption" class="caption"></div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
